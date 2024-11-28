@@ -6,15 +6,15 @@ const userController = require("../controllers/userController");
 router.get("/users", userController.getUsers);
 
 // Rota POST para criar um novo usuário
-router.post("/users", userController.createUsers);
+router.post("/users", userController.createUser);
 
 // Rota PUT para atualizar um usuário existente
-router.put("/users/:id", userController.updateUsers);
+router.put("/users/:id", userController.updateUser);
 
 // Rota DELETE para remover um usuário
 router.delete("/users/:id", userController.deleteUser);
 
 // Rota GET para buscar um usuário pelo ID
-router.get("/users/:id", userController.getUserByIdById);
+router.get("/users/:id", userController.getUserById);
 
 module.exports = router;
